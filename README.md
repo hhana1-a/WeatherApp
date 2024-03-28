@@ -3,7 +3,7 @@
 
 For this project I decided to make a Wheather app to fetch weather information from API. <br>
 Here is the list of things it has to have and list of things that are nice to have.<br>
-<br>
+<br><br>
 ## Should have
 <br>
 <i>CSS</i><br>
