@@ -9,7 +9,7 @@ Here is the list of things it has to have and list of things that are nice to ha
 <i>CSS</i>
 <br>
 * Website needs to be responsive <br>
-* Simple logo + paragraph to explain user that he needs to input the city, button to click, search input field + display of the results (that will be created dynamically) <br>
+* Simple log, paragraph to explain user that he needs to input the city, button to click, search input field, display of the results (that will be created dynamically) <br>
 
 <br><br>
 
