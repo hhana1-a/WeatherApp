@@ -3,7 +3,7 @@
 
 For this project I decided to make a Wheather app to fetch weather information from API. <br>
 Here is the list of things it has to have and list of things that are nice to have.<br>
-<br><br>
+<br>
 ## Should have
 <br>
 <i>CSS</i><br>
@@ -26,7 +26,7 @@ Here is the list of things it has to have and list of things that are nice to ha
 * Push<br>
 * Deploy<br>
 * Update Readme<br>
-
-## Could have
-*Change background based on the weather
-*Conversion between temperature scales
+<br><br>
+## Could have <br>
+* Change background based on the weather <br>
+* Conversion between temperature scales <br>
