@@ -1,0 +1,215 @@
+*{box-sizing: border-box;
+margin:0;
+padding: 0;}
+@font-face {
+    font-family: 'GrBold';
+    src: url('fonts/GraphikBold.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'GrMed';
+    src: url('fonts/GraphikMedium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SanBlc';
+    src: url('fonts/SanchezSlab-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SanExLight';
+    src: url('fonts/SanchezSlab-ExtraLigh.otf') format('opentype');
+}
+
+
+
+
+@media (max-width: 880px) {
+    .yellow_container {
+    width: 96vw;
+    min-height: 38vh;
+    }
+}
+@media (min-width: 881px) {
+    .yellow_container {
+    width: 85vw;
+    min-height: 40vh ;
+    }
+
+}
+
+
+body {display:flex; flex-direction: column; align-items: center;}
+
+.yellow_container {
+    background-color:#FCDD69 ;
+    border-radius: 20px;
+    margin-top: 7%;
+    overflow: hidden;
+}
+
+
+.flexbox-search {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    flex-direction: column;
+}
+
+.bigger {
+    font-size: 2.1em !important;
+}
+
+h1{
+    font-family: 'GrBold', sans-serif;
+    font-size: clamp(21px, 3.2vw, 26px);
+    padding: 1.2% 0 2%;
+}
+
+.black-sanch { 
+    font-family: 'SanBlc', sans-serif; 
+    line-height: none;
+    
+    
+    }
+
+.text {
+    font-family: 'SanExLight', sans-serif;
+    font-size: clamp(20px, 3.2vw, 26px);
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding:5%;
+    text-align: center;
+    
+}
+
+
+.dark-blue {color: #112DA4; /*dark-blue*/ }
+.blue { color: #224AFB;}
+.yellow {color:#FCDD69;}
+.pale-yellow{color: #FBF8CD;}
+.white {color:white;}
+
+
+.search_cont {display:flex; }
+    #search-input { appearance: none;
+        outline: none;
+        opacity:85%;
+        padding:5px 10px;
+        width: clamp(40vw ,25vw, 800px);
+        font-size: clamp(8px,2vw, 14px);
+        border-radius: 20px 0 0 20px;
+        border:none;
+        margin:0px;
+        /* height:34px; */
+        line-height: normal;
+                
+
+    }
+    .btn { 
+        display: flex;  align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        appearance: none;
+        background-color: white;
+        border:none;
+        cursor: pointer;
+        padding:5px 10px;
+        width: 75px;
+        font-size: 1em;
+        border-radius: 0 20px 20px 0;
+        /* height: 34px; */
+        outline:none;
+        line-height: normal;
+        vertical-align: middle; 
+        margin:0;
+        background-color: #224AFB;
+        color:white;
+    }
+
+    .btn:hover {
+        background-color: #3351d7;;
+    }
+.info {
+width:100%;
+/*height:600px;*/
+z-index: 100;
+margin:5% 0%;
+display: flex;
+align-items: center;
+
+flex-direction: column;}
+
+
+.info_cont {
+width:100%;
+/*background-color:#112DA4;*/
+font-family: 'SanBlc', sans-serif;
+font-size: clamp(32px, 3.2vw, 48px);
+text-align: center;
+margin-bottom: 2.3%;
+animation: slideUp 0.8s forwards;
+
+}
+
+.info_block {
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 8px;
+width: 95%;
+height: 20%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding:clamp(3%, 3.2vw, 5%);
+ animation: appear 1.2s forwards;
+}
+
+.info_block_1, .info_block_2, .info_block_3{
+display:flex;
+flex-direction: column;
+align-items: center;
+font-family:'SanExLight', sans-serif;
+font-size: clamp(10px, 3.2vw, 14px);
+}
+
+.temp_data,
+.feels_like_data,
+.humidity_data {
+    font-family:'SanBlc', sans-serif;
+    font-size: clamp(18px, 3.2vw, 26px);
+}
+
+.blue_foot {
+    width: 100%;
+    background-color: #112DA4;
+    height:30px;
+    z-index: 2000;
+    color:rgba(255, 255, 255, 0.7);
+    font-family:'SanBlc', sans-serif;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 8px;
+    }
+
+
+
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(54%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes appear {
+        0% {
+            transform: scale(0.2);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
