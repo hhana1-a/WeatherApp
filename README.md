@@ -1,7 +1,14 @@
+
 # Weatherapp
 <br><br>
 
 For this project I decided to make a Wheather app to fetch weather information from API. <br>
+
+<img src="https://raw.githubusercontent.com/hhana1-a/Weatherapp/main/sketch.jpg" style="width: 500px;">
+<i>Sketch</i>
+
+<br><br>
+
 Here is the list of things it has to have and list of things that are nice to have.<br>
 <br><br>
 
