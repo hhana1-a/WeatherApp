@@ -42,12 +42,13 @@ function displayWeather(data) {
     const country = data.sys.country;
     const id = data.weather[0].id;
 
-    const icon = document.createElement("p");
-
-    icon.innerText = getIcon(id);
+    const iconP = document.createElement("p");
+    const icon = getIcon(id);
+    
 
 
     console.log(temp, feelsLike, humidity, name + ", " + country, icon)
+ 
 
     infoBlock.innerHTML = ""; 
     infoBlock.style.display = "flex";
@@ -57,9 +58,9 @@ function displayWeather(data) {
     const infoContTitle = document.createElement('p');
     infoContTitle.classList.add('info_cont');
     infoCont.appendChild(infoContTitle);
-  
-    infoContTitle.textContent = name + ", " + country + ", " + icon.innerText;
-    
+
+    infoContTitle.textContent = name + ", " + country + ", ";
+    infoContTitle.appendChild(icon); 
 
     const infoBlock_1 = document.createElement("div")
     const pTemp = document.createElement('p');
@@ -105,24 +106,28 @@ function displayWeather(data) {
 }
 
 function getIcon (id) {
-
+    const img = new Image();
+    img.style.height = '20px'; 
         switch(true){
             case (id >= 200 && id < 300):
-                return "⛈";
-            case (id >= 300 && id < 400):
-                return "🌧";
-            case (id >= 500 && id < 600):
-                return "🌧";
+                img.src = "icons/thunderstorm.png";
+                return img;
+            case (id >= 300 && id < 600):
+                img.src = "icons/rainy.png";
+                return img;
             case (id >= 600 && id < 700):
-                return "❄";
+                img.src = "icons/snowflake.png";
+                return img;
             case (id >= 700 && id < 800):
-                return "🌫";
+                img.src = "icons/haze.png";
+                return img;
             case (id === 800):
-                return "☀";
+                img.src = "icons/sun.png";
+                return img;
             case (id >= 801 && id < 810):
-                return "☁";
-            default:
-                return "❓";
+                img.src = "icons/cloudy.png";
+                return img;
+    
         }
     
 }
