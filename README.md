@@ -7,9 +7,7 @@ You can [check out](https://hhana1-a.github.io/WeatherApp/) deployed website.
 
 <img src="https://github.com/hhana1-a/Weatherapp/blob/main/sketch.jpg?raw=true" style="width: 500px;">
 
-
-
-<i>#####Sketch</i>
+<i>Sketch</i>
 
 <br><br>
 
