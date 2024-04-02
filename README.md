@@ -4,7 +4,11 @@
 
 For this project I decided to make a Wheather app to fetch weather information from API. <br>
 
-<img src="https://raw.githubusercontent.com/hhana1-a/Weatherapp/main/sketch.jpg" style="width: 500px;">
+<img src="https://github.com/hhana1-a/Weatherapp/blob/main/sketch.jpg?raw=true" style="width: 500px;">
+
+
+
+
 <i>Sketch</i>
 
 <br><br>
