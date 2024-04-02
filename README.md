@@ -1,6 +1,6 @@
 
 # Weatherapp
-<br><br>
+<br>
 
 For this project I decided to make a Weather app that fetches weather information from OpenWeatherMap's API. The app will display data about the city that user inputs, as well as inform them if what they inputted is incorect.  <br>
 You can [check out](https://hhana1-a.github.io/WeatherApp/) deployed website.
@@ -9,7 +9,7 @@ You can [check out](https://hhana1-a.github.io/WeatherApp/) deployed website.
 
 
 
-#####<i>Sketch</i>
+<i>#####Sketch</i>
 
 <br><br>
 
